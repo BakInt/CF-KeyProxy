@@ -1,9 +1,6 @@
-# Cloudflare Workers Proxy
+# KeyVault Proxy
 
 这是一个基于 Cloudflare Workers 的简单反向代理脚本，用于将客户端的请求转发到目标地址，并将目标地址的响应返回给客户端。在使用本脚本之前，请务必详细阅读以下安全注意事项和免责声明，以确保使用脚本时的安全和法律合规性。
-
-- 群聊: [HeroCore](https://t.me/HeroCore)
-- 频道: [HeroMsg](https://t.me/HeroMsg)
 
 ## 简介
 
@@ -69,14 +66,6 @@
 - **自担风险**：使用此脚本需自行承担风险。作者和 Cloudflare 不对脚本的滥用、不当使用或导致的任何损害承担责任。
 
 **此免责声明针对非中国大陆地区用户，如在中国大陆地区使用，需遵守相关地区法律法规，且由使用者自行承担相应风险与责任。**
-
-
-## 资源
-
-- [Cloudflare Workers 文档](https://developers.cloudflare.com/workers)
-- [Cloudflare Workers 设置](https://developers.cloudflare.com/workers/platform/settings)
-
-[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
 
 ## 许可证
 
