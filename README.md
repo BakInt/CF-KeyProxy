@@ -1,6 +1,8 @@
-# KeyVault Proxy
+# CF-KeyProxy
 
-这是一个基于 Cloudflare Workers 的简单反向代理脚本，用于将客户端的请求转发到目标地址，并将目标地址的响应返回给客户端。在使用本脚本之前，请务必详细阅读以下安全注意事项和免责声明，以确保使用脚本时的安全和法律合规性。
+这是一个基于 Cloudflare Workers 的安全反向代理脚本，用于将客户端请求转发至目标地址，并返回其响应。本项目为 [作者原地址]([https://www.cloudflare.com/](https://github.com/ymyuuu/Cloudflare-Workers-Proxy))  的魔改增强版，增加了密钥验证、主页隐藏等特性，防止被恶意滥用。 
+
+⚠️⚠️⚠️在使用本脚本前，请务必仔细阅读相关安全注意事项与免责声明，确保符合法律法规并合法合规地使用。 
 
 ## 简介
 
@@ -33,9 +35,9 @@
 
 1. 发出请求：只需向您的 Cloudflare Workers URL 发出请求，将请求发送到目标网站。
 
-   示例请求：`https://your-worker-url.com/https://example.com/`
+   示例请求：`https://your-worker.com/<密钥>/<目标URL>`
 
-   将 `your-worker-url.com` 替换为您的 Cloudflare Workers URL，`example.com` 替换为您要代理的目标网站的地址。
+   将 `your-worker-url.com` 替换为您的 Cloudflare Workers URL，`<密钥>` Cloudflare的变量密钥，`<目标URL>` 替换为您要代理的目标网站的地址。
 
 2. 处理重定向
 
